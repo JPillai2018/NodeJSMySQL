@@ -75,6 +75,7 @@ The app has three options
         ![](https://github.com/JPillai2018/NodeJSMySQL/blob/master/assets/images/Supervisor-7.PNG)
         ![](https://github.com/JPillai2018/NodeJSMySQL/blob/master/assets/images/Supervisor-8.PNG)
         ![](https://github.com/JPillai2018/NodeJSMySQL/blob/master/assets/images/Supervisor-9.PNG)
+        ![](https://github.com/JPillai2018/NodeJSMySQL/blob/master/assets/images/Supervisor-10.PNG)
         
 
 - Future enhancements
