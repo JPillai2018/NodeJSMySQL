@@ -18,7 +18,7 @@ The app has three options
         If incorrect Item code is entered a validation message will be displayed
         ![](https://github.com/JPillai2018/NodeJSMySQL/blob/master/assets/images/Customer-4.PNG)
         ![](https://github.com/JPillai2018/NodeJSMySQL/blob/master/assets/images/Customer-5.PNG)
-        ![](https://github.com/JPillai2018/NodeJSMySQL/blob/master/assets/images/Customer-5.PNG)
+        ![](https://github.com/JPillai2018/NodeJSMySQL/blob/master/assets/images/Customer-6.PNG)
 
 2. Manager View
     This has four options-
@@ -53,7 +53,6 @@ The app has three options
         ![](https://github.com/JPillai2018/NodeJSMySQL/blob/master/assets/images/Manager-11.PNG)
         ![](https://github.com/JPillai2018/NodeJSMySQL/blob/master/assets/images/Manager-12.PNG)
         ![](https://github.com/JPillai2018/NodeJSMySQL/blob/master/assets/images/Manager-13.PNG)
-
 
 
 3. Supervisor View
