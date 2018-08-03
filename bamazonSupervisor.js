@@ -66,7 +66,7 @@ function viewProductSaleByDepartment(){
     console.log("\n" + "============================================================================================================================"); 
     console.log("\n" + "                                                  Sales - Profit Report                                                     "); 
     console.log("\n" + "============================================================================================================================"); 
-    console.log("\n" + "Department ID             Department Name                  Overhead Cost      Product Sales                Total Profit"); 
+    console.log("\n" + "Department ID             Department Name                  Overhead Cost      Product Sales       Total Profit"); 
     console.log("\n" + "============================================================================================================================"); 
     for (var i = 0; i< res.length; i++){
       var dataT = [];
@@ -83,7 +83,7 @@ function viewProductSaleByDepartment(){
       productSales = padS(productSales, 13, "L");
       var totProfit = parseFloat(productSales) - parseFloat(overheadCost);
       totProfit = padS(totProfit, 13, "L");
-      console.log("\n" + deptId + " " +  deptName + " "  + overheadCost1 + "     " + productSales + "     " + totProfit); 
+      console.log("\n" + deptId + " " +  deptName + " "  + overheadCost1 + "         " + productSales + "       " + totProfit); 
 
       var data = "id:" + deptId + ", name:" + deptName + ", cost:"  + overheadCost1 + ", sales:" + productSales + ", profit:" + totProfit;
       row = row + i;
