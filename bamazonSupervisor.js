@@ -63,9 +63,10 @@ function viewProductSaleByDepartment(){
     }
     var sales = {};
     var row = "";
-
     console.log("\n" + "============================================================================================================================"); 
-    console.log("\n" + "Department ID" + "  " +  "Department Name                  " + "     "  + "Overhead Cost" + "     " + "Product Sales" + "      " + "Total Profit"); 
+    console.log("\n" + "                                                  Sales - Profit Report                                                     "); 
+    console.log("\n" + "============================================================================================================================"); 
+    console.log("\n" + "Department ID             Department Name                  Overhead Cost      Product Sales                Total Profit"); 
     console.log("\n" + "============================================================================================================================"); 
     for (var i = 0; i< res.length; i++){
       var dataT = [];
@@ -119,6 +120,9 @@ function createNewDepartment(){
       deptCode = user.deptCode;
       deptName = user.deptName;
       overheadCost = user.overHeadCost;
+      if (isNaN(overheadCost)){
+        overheadCost = " ";
+      }
 
       if ((deptCode === "") || (deptCode === " ") || (deptName  === " ") || (overheadCost  === " ") ){
         selectionValid = false;

@@ -30,6 +30,8 @@ function listAllItems(){
     if (err) throw err;
     var i = 0;
     console.log("\n" + "===================================================================================="); 
+    console.log("\n" + "                                Products For Sale"); 
+    console.log("\n" + "===================================================================================="); 
     console.log("\n" + "Item ID     Product Name                                         Price     Quantity"); 
     console.log("\n" + "===================================================================================="); 
     for (var i = 0; i< res.length; i++){

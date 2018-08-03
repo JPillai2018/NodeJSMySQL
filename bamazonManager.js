@@ -63,7 +63,9 @@ function viewProductsForSale(){
     var i = 0;
     //console.log(res);
     console.log("\n" + "================================================================================================="); 
-    console.log("\n" + "Item ID" + "     " +  "Product Name                                   " + "     "  + "Price" + "     " + "Quantity"); 
+    console.log("\n" + "                                   View Products For Sale"                                        ); 
+    console.log("\n" + "================================================================================================="); 
+    console.log("\n" + "Item ID                Product Name                              Price       Quantity"); 
     console.log("\n" + "================================================================================================="); 
     for (var i = 0; i< res.length; i++){
       var itemId = res[i].item_id;
@@ -73,7 +75,7 @@ function viewProductsForSale(){
       prodPrice = padS(prodPrice,5, "L");
       var stockQty = res[i].stock_quantity;
       stockQty = padS(stockQty,5, "L");
-      console.log("\n" + itemId + "       " +  prodName + "                  "  + prodPrice + "      " + stockQty); 
+      console.log("\n" + itemId + "       " +  prodName + "                  "  + prodPrice + "          " + stockQty); 
     }
     console.log("\n" + "================================================================================================="); 
     connection.end();
@@ -234,10 +236,25 @@ function addNewProduct(){
       itemCode = user.itemCode;
       itemName = user.itemName;
       itemDepartment = user.departmentName;
-      itemPrice = parseFloat(user.itemPrice);
-      itemQuantity = parseFloat(user.itemQuantity);
+      var itemprice = user.itemPrice;
+      if (itemprice.trim() != ""){
+        itemPrice = parseFloat(user.itemPrice);
+      }
+      else
+      {
+        itemPrice = itemprice;
+      }
+      var itemquantity = user.itemQuantity;
+      if (itemquantity.trim() != ""){
+        itemQuantity = parseFloat(user.itemQuantity);
+      }
+      else
+      {
+        itemQuantity = itemquantity;
+      }
 
-      if ((itemCode.trim() === "") || (itemCode === " ") || (itemName.trim()  === "") || (itemDepartment.trim()  === " ") || (itemPrice  === 0) || (itemPrice.trim()  === "") || (itemQuantity  === 0) || (itemQuantity.trim()  === "")){
+
+      if ((itemCode.trim() === "") || (itemCode === " ") || (itemName.trim()  === "") || (itemDepartment.trim()  === " ") || (itemPrice  === 0) || (itemPrice  === "") || (itemQuantity  === 0) || (itemQuantity  === "")){
         selectionValid = false;
         console.log("Invalid Input. Please Re-enter!!!");
         console.log("---------------------------------");
